@@ -20,17 +20,3 @@ support react+ts project
     };
     generator(config);
 ```
-
-- expect result
-
-```bash
-    --components
-    ----index.ts
-    ----notify-close.tsx
-```
-
-- how to test your contribute code ?
-
-```bash
-    npm run test
-```
