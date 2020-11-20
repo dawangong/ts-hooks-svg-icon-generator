@@ -1,6 +1,6 @@
-# hooks-svg-icon-generator
+# ts-hooks-svg-icon-generator
 
-support react+ts project
+support react hooks + ts project
 
 - api
   - svgDir: svg文件目录

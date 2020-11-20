@@ -8,7 +8,7 @@ const iconList = [
 ]
 
 interface Props {
-    name?: string | any
+    name?: string;
     size?: number;
     color?: string;
     width?: number;
@@ -21,7 +21,7 @@ interface Props {
 
 const Icon: React.FC<Props> = (props: Props) => {
 
-  const renderPreview = () => {
+  const renderPreview = (): React.ReactElement => {
     iconList.map(name => (
       <div key={name}>
         <h3>
@@ -32,7 +32,7 @@ const Icon: React.FC<Props> = (props: Props) => {
     ));
   };    
 
-  const renderIcon = name => {
+  const renderIcon = (name: string) : React.ReactElement => {
     const { wrapperStyle } = props;
     return wrapperStyle ? (
       <div style={wrapperStyle}>{getIcon(name)}</div>
@@ -41,7 +41,7 @@ const Icon: React.FC<Props> = (props: Props) => {
     );
   };
 
-  const getIcon = name => {
+  const getIcon = (name: string) : React.ReactElement => {
     const { size, width, height, color, wrapperClass, wrapperStyle, onClick } = props;
 
     const iconMap = {
@@ -49,7 +49,7 @@ const Icon: React.FC<Props> = (props: Props) => {
       '{{icon.name}}': {{icon.svg | safe}},
       {% endfor -%}
     };
-    return iconMap(name);
+    return iconMap[name];
   }
 
   const { name, preview } = props;
