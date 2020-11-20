@@ -1,7 +1,7 @@
 {
-  "name": "hooks-svg-icon-generator",
+  "name": "ts-hooks-svg-icon-generator",
   "version": "1.0.0",
-  "description": "support react+ts project",
+  "description": "support ts + react hooks project",
   "main": "index.js",
   "scripts": {
     "test": "node ./test/generator.js"
@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dawangong/hooks-svg-icon-generator/issues"
+    "url": "https://github.com/dawangong/ts-hooks-svg-icon-generator/issues"
   },
-  "homepage": "https://github.com/dawangong/hooks-svg-icon-generator#readme"
+  "homepage": "https://github.com/dawangong/ts-hooks-svg-icon-generator#readme"
 }
